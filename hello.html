@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>输入密码</title>
+    <script>
+        mytext='没有贺卡的材料只好用用一个赶出来的简陋小网站代替了:)\n我发现现在苹果都被打包成工业化礼盒卖了，为了突出点个性平安夜咱就送牛奶枣啦~\n祝某个小朋友平安夜快乐，“枣”日心想事成噢！\n（尺子是个小纪念品，只适合看不适合用hhh）'
+        function checkPassword() {
+            // 获取输入框的值
+            var inputPassword = document.getElementById('password').value;
+
+            // 判断密码是否正确
+            if (inputPassword === 'x3c67e') { // 请替换为你的密码
+                alert(mytext); // 显示指定的文本
+            } else {
+                alert('密码错误，请重新输入。'); // 提示密码错误
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <div style="text-align:center; margin-top: 50px;">
+        <input type="password" id="password" placeholder="请输入密码">
+        <br><br>
+        <button onclick="checkPassword()">提交</button>
+    </div>
+</body>
+
+</html>
